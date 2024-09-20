@@ -4,8 +4,10 @@ function TopNav() {
 
     return(
         <div class="topnav">
-            <span class="material-symbols-outlined">menu_book</span>
-            <a class="active" href="#home">Recipe App</a>
+            <a class="active" href="#home">
+                <span class="material-symbols-outlined">kitchen</span>
+                What's in my fridge?
+            </a>
 
         </div>
     )

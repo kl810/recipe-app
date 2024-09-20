@@ -1,12 +1,10 @@
 import './App.css';
-import TopNav from './components/top-nav/top-nav';
-import InputItem from './components/input/input';
+import RecipeApp from './components/recipe-app/recipe-app';
 
 function App() {
   return (
     <div className="App">
-      <TopNav />
-      <InputItem />
+      <RecipeApp />
     </div>
   );
 }

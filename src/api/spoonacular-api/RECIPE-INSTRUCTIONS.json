@@ -1,0 +1,71 @@
+[
+    {
+        "name": "",
+        "steps": [
+            {
+                "number": 1,
+                "step": "On a serving plate alternate slices of mozzarella and tomatoes.",
+                "ingredients": [
+                    {
+                        "id": 1026,
+                        "name": "mozzarella",
+                        "localizedName": "mozzarella",
+                        "image": "mozzarella.png"
+                    },
+                    {
+                        "id": 11529,
+                        "name": "tomato",
+                        "localizedName": "tomato",
+                        "image": "tomato.png"
+                    }
+                ],
+                "equipment": []
+            },
+            {
+                "number": 2,
+                "step": "Sprinkle with half of basil.",
+                "ingredients": [
+                    {
+                        "id": 2044,
+                        "name": "basil",
+                        "localizedName": "basil",
+                        "image": "basil.jpg"
+                    }
+                ],
+                "equipment": []
+            },
+            {
+                "number": 3,
+                "step": "In a blender or food processor blend basil and all remaining ingredients together until smooth.",
+                "ingredients": [
+                    {
+                        "id": 2044,
+                        "name": "basil",
+                        "localizedName": "basil",
+                        "image": "basil.jpg"
+                    }
+                ],
+                "equipment": [
+                    {
+                        "id": 404771,
+                        "name": "food processor",
+                        "localizedName": "food processor",
+                        "image": "https://spoonacular.com/cdn/equipment_100x100/food-processor.png"
+                    },
+                    {
+                        "id": 404726,
+                        "name": "blender",
+                        "localizedName": "blender",
+                        "image": "https://spoonacular.com/cdn/equipment_100x100/blender.png"
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "step": "Drizzle over salad.",
+                "ingredients": [],
+                "equipment": []
+            }
+        ]
+    }
+]
