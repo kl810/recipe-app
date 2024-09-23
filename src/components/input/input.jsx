@@ -1,26 +1,74 @@
 import './input.css'
+import { useRef} from 'react';
+import {Button, Form, InputGroup} from 'react-bootstrap';
 
-function InputItem({ingredient, setIngredient}) {
+function InputItem({ingredientsList, setIngredientsList}) {
 
-    function handleInputChange(e) {
-        setIngredient(e.target.value)
-        console.log(e.target.value)
+    const inputIngredient = useRef(null)
+
+    const onSubmit = (e) => {
+        // e.preventDefault()
+        
+        const submitIngredients = [...ingredientsList, inputIngredient.current.value]
+        console.log("OnSubmit " + submitIngredients)
+        console.log("ingredient " + ingredientsList)
+        
+        setIngredientsList(submitIngredients)
+        inputIngredient.current.value=""
     }
+
+    
     return(
-        <form>
-            <div className="input-wrapper">
-                <input 
-                    type="text" 
-                    placeholder="what's in your fridge?" 
-                    value={ingredient}
-                    onChange={handleInputChange}
+        <> 
+            {/* React bootstrap */}
+            <InputGroup id="input-group">
+                <Form.Control
+                    ref={inputIngredient}
+                    name="input-ingredient"
+                    placeholder="What's in your pantry?"
+                    aria-label="input-ingredient"
+                    aria-describedby="basic-addon2"
+                    type="text"
+                    onKeyDown={(e) => { 
+                        if (e.key === "Enter") { 
+                            onSubmit(); 
+                        } 
+                    }}  
                 />
-                <button 
-                    type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
-        </form>
+                <Button 
+                    variant="outline-secondary" 
+                    id="button-addon2" 
+                    type="submit"
+                    onClick={onSubmit}
+                >
+                    <i className="fa-solid fa-magnifying-glass"></i>
+                </Button>
+            </InputGroup>
+
+
+        </>
+        // html bootstrap
+        // <form>
+        //     <div className="input-wrapper">
+        //         <input 
+        //             ref={searchInput}
+        //             type="text" 
+        //             placeholder="what's in your pantry?" 
+        //             onChange={handleInputChange}
+        //             onKeyDown={(e) => { 
+        //                 if (e.key === "Enter") { 
+        //                     submitItem(); 
+        //                 }
+        //             }} 
+        //         />
+        //         <button 
+        //             type="submit"
+        //             onClick={submitItem}
+        //         >
+        //             <i className="fa-solid fa-magnifying-glass"></i>
+        //         </button>
+        //     </div>
+        // </form>
     )
 }
 

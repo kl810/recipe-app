@@ -10,12 +10,12 @@ export async function getIngredientRecipes(ingredients) {
     return ingredientRecipes
 }
 
-export async function getRecipeInstructions(recipeId) {
+// export async function getRecipeInstructions(recipeId) {
 
-    const url = `https://${BASE_URL}/${recipeId}/analyzedInstructions?apiKey=${API_KEY}`
-    `https://${BASE_URL}/data/3.0/onecall?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric&exclude=minutely`
-    const res = await fetch(url)
-    const recipeInstructions = await res.json()
+//     const url = `https://${BASE_URL}/${recipeId}/analyzedInstructions?apiKey=${API_KEY}`
+//     `https://${BASE_URL}/data/3.0/onecall?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric&exclude=minutely`
+//     const res = await fetch(url)
+//     const recipeInstructions = await res.json()
     
-    return recipeInstructions
-}
+//     return recipeInstructions
+// }

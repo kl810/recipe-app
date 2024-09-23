@@ -1,0 +1,28 @@
+.tag-item {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(181, 191, 200, .2);
+    color: rgba(79, 80, 90, .6);
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: default;
+}
+
+.tag-item .close {
+    font-size: 15px; 
+    height: 15px;
+    width: 15px;
+    background-color: rgb(183, 180, 180);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: .5em;
+    cursor: pointer;
+}

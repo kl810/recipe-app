@@ -1,31 +1,59 @@
-.input-wrapper {
-    position: relative;
+#input-group {
     display: flex;
+    width: 100%;
+    max-width: 40%;
+    margin: 0 auto;
     justify-content: center;
 }
 
-.input-wrapper input {
-    width: 40%;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
+/* .form-control {
     background-color:#383838;
     color: #DCDCDC;
     padding: 10px;
+} */
+
+.form-control::placeholder {
+    color: rgb(123, 122, 122)
 }
 
-input:focus {
+.form-control:not(active),  .form-control:focus {
+    background-color:#383838;
+    color: #DCDCDC;
+    outline: none;
+ }
+
+
+/* .input:focus {
     outline: none; /*get rid of the blue outline*/
+/* } */ 
+
+button {
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    color:#DCDCDC;
+
 }
 
+button.hover {
+    background-color: #383838;
+}
+
+button.secondary {
+    --background-color: transparent;
+    --color:#DCDCDC   
+}                                   /* } not working */
+
+
+/* 
 .input-wrapper button {
     position: relative;
     top: 0;
     right: 0;
     border-radius: 10px;
-    transform: translateY(-50%);
-    transform: translateX(-110%); /*align button within input field*/
-    border: none;
+    /* transform: translateY(-50%);
+    transform: translateX(-110%); align button within input field */
+    /* border: none;
     background-color: transparent;
     color:#DCDCDC;
-}
+} */ 
