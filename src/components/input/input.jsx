@@ -10,8 +10,6 @@ function InputItem({ingredientsList, setIngredientsList}) {
         // e.preventDefault()
         
         const submitIngredients = [...ingredientsList, inputIngredient.current.value]
-        console.log("OnSubmit " + submitIngredients)
-        console.log("ingredient " + ingredientsList)
         
         setIngredientsList(submitIngredients)
         inputIngredient.current.value=""

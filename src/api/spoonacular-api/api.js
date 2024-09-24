@@ -3,7 +3,10 @@ const BASE_URL = 'api.spoonacular.com/recipes'
 
 export async function getIngredientRecipes(ingredients) {
 
-    const url = `https://${BASE_URL}/findByIngredients?apiKey=${API_KEY}&ingredients=${ingredients}&number=10&ranking=1`
+    const ingredientParams = ingredients.join(",+")
+
+    const url = `https://${BASE_URL}/findByIngredients?apiKey=${API_KEY}&ingredients=${ingredientParams}&number=10&ranking=1`
+    console.log(url)
     const res = await fetch(url)
     const ingredientRecipes = await res.json()
     

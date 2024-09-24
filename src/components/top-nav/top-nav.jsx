@@ -6,7 +6,7 @@ function TopNav() {
         <div className="topnav">
             <a className="active" href="#home">
                 <span className="material-symbols-outlined">kitchen</span>
-                What's in my fridge?
+                What's cookin'?
             </a>
 
         </div>
