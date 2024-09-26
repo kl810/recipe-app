@@ -2,7 +2,8 @@
 
 const routes = {
     home: '/',
-    recipe: '/recipe'
+    search: '/search',
+    recipe:'/recipe'
 }
 
 export default routes;
