@@ -45,28 +45,6 @@ function InputItem({ingredientsList, setIngredientsList}) {
 
 
         </>
-        // html bootstrap
-        // <form>
-        //     <div className="input-wrapper">
-        //         <input 
-        //             ref={searchInput}
-        //             type="text" 
-        //             placeholder="what's in your pantry?" 
-        //             onChange={handleInputChange}
-        //             onKeyDown={(e) => { 
-        //                 if (e.key === "Enter") { 
-        //                     submitItem(); 
-        //                 }
-        //             }} 
-        //         />
-        //         <button 
-        //             type="submit"
-        //             onClick={submitItem}
-        //         >
-        //             <i className="fa-solid fa-magnifying-glass"></i>
-        //         </button>
-        //     </div>
-        // </form>
     )
 }
 

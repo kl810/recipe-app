@@ -1,5 +1,7 @@
 import './recipe-card.css';
-import { Card, Button, Container, CardGroup } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
+import routes from '../../routes';
+import { Link } from 'react-router-dom';
 
 
 function RecipeCard({recipe}) {
@@ -13,7 +15,9 @@ function RecipeCard({recipe}) {
                 <Card.Text>
                 Recipe Description
                 </Card.Text>
-                <Button variant="primary" className="button">Click for recipe</Button>
+                <Button variant="primary" className="button">
+                    <Link to={`/recipes/${recipe.id}`} className="text-link">Click for Recipe</Link>
+                </Button>
             </Card.Body>
         </Card>
 

@@ -1,12 +1,14 @@
 .banner-img {
-    background-color:cadetblue;
+    /* background-color:cadetblue; */
     position: relative;
     top: 0;
     left: 0;
     right: 0;
-    width: inherit;
+    width: 100%;
     height: 30vh;
     object-fit: cover;
+    opacity: 0.7;
+    border-radius: 20px;
     /* object-position: 80% 100%; */
 
 }
@@ -78,15 +80,15 @@
     font-size: 20px;
 }
 
-.ingredients .notes {  
+.notes {  
     font-family:"Cormorant";
     font-weight: 400;
-    font-size: 10px;
+    font-size: 20px;
     font-style: italics; 
     color: grey;
     border: solid rgb(180, 176, 176);
     width: 70%;
-    margin-top: 50%; 
+    margin-top: 30%; 
 }
 
 .directions {

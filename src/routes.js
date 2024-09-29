@@ -3,7 +3,7 @@
 const routes = {
     home: '/',
     search: '/search',
-    recipe:'/recipe'
+    recipe: '/recipes/:recipeId'
 }
 
 export default routes;

@@ -1,10 +1,10 @@
 import './App.css';
-import RecipeApp from './components/recipe-app/recipe-app';
 import TopNav from './components/top-nav/top-nav';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/home';
+import SearchPage from './pages/search';
 import RecipePage from './pages/recipe';
-import routes from './routes'
+import routes from './routes';
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <TopNav />
       <Routes>
           <Route path={routes.home} element={<HomePage />} />
-          <Route path={`/recipe-app`} element={<RecipeApp />} />
-          <Route path={routes.recipe} element={<RecipePage />} />
+          <Route path={routes.search} element={<SearchPage />} />
+          <Route path="/recipes/:recipeId" element={<RecipePage />} />
       </Routes>
      
     </div>

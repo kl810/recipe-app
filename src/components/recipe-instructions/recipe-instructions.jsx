@@ -1,28 +1,28 @@
 import './recipe-instructions.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
-function RecipeInstructions() {
+function RecipeInstructions({info}) {
 
     return(
         <>
-            <div className="banner-img d-flex justify-content-center align-items-center"> 
-                <p>banner image</p>
+            <div className="d-flex justify-content-center align-items-center"> 
+                <img className="banner-img" src={info.image} alt="recipe image"/>
                 {/* <img /> */}
             </div>
             <div className="recipe-text">
                 <Container fluid>
                     <Row>
                         <Col className="col-4 info">
-                            <h1 className="title">Pumpkin Soup</h1>
+                            <h1 className="title">{info.title}</h1>
                             <hr className="line"></hr>
                             <Row>
                                 <Col className="info-col">
-                                    <span><i class="fa-solid fa-utensils info-icon"></i></span> 
-                                    <p className="prep">2 servings</p>
+                                    <span><i className="fa-solid fa-utensils info-icon"></i></span> 
+                                    <p className="prep">{info.servings} servings</p>
                                 </Col>
                                 <Col className="info-col">
                                     <span><i className="fa-regular fa-clock info-icon"></i></span>
-                                    <p className="prep">15 minutes</p>
+                                    <p className="prep">{info.readyInMinutes} minutes</p>
                                 </Col>
                             </Row>
                             <Row className="ingredients">
@@ -31,12 +31,12 @@ function RecipeInstructions() {
                                 <p>50g of butter</p>
                                 <p>3 eggs</p>
                                 <p>2 tsp baking soda</p>
-                                <div className="notes">
+                            </Row> 
+                            <Row className="d-flex justify-content-center align-items-center notes">
                                     <p>NOTES: <br />
                                         Allergens: peanuts, dairy, eggs
                                     </p>
-                                </div>
-                            </Row> 
+                            </Row>
                         </Col>
                         <Col className="Col-8 directions">
                             <h2>DIRECTIONS</h2>

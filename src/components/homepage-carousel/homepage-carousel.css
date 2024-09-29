@@ -1,20 +1,17 @@
-img {
+.background {
     display: 'block';
-    width: 100%;
-    height: 40rem;
+    width: 60rem; /* add auto resizing */
+    height: 45rem;
     opacity: 0.5;
+    object-fit: cover;
 }
 
-.carousel-container {
-    color: 	#707070;
-}
-
-h3 {
+.home-title {
     font-size: 3rem;
     color: #383838;
 }
 
-p {
+.home-sub {
     font-size: 1.5rem;
     color: 	#404040;
 }
@@ -26,10 +23,14 @@ p {
 
 }
 
-button {
+.btn-search {
     border-radius: 25px;
     border: none; 
     background-color: #00AB66;
+    text-align: center;
     padding: 15px;
+}
 
+.home-icon {
+    padding: 5px;
 }
