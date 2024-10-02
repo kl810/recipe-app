@@ -24,13 +24,16 @@ function HomepageCarousel() {
                     <Carousel.Caption>
                         <h3 className="home-title">Don't know what to cook?</h3>
                         <p className="home-sub">Find 100s of recipes, filtered by products you have at home.</p>
-                        <button className="btn-search">
-                            <Link to={routes.search} className="text-link">Let's get cookin'!</Link>
-                            <span className="home-icon"><i className="fa-solid fa-kitchen-set"></i></span>
-                        </button>
+                        
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            <div className="btn-wrapper">
+                <button className="btn-search">
+                    <Link to={routes.search} className="text-link">Let's get cookin'!</Link>
+                    <span className="home-icon"><i className="fa-solid fa-kitchen-set"></i></span>
+                </button>
+            </div>
         </div>
 
     )

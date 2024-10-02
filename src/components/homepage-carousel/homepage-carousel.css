@@ -23,6 +23,12 @@
 
 }
 
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 .btn-search {
     border-radius: 25px;
     border: none; 
