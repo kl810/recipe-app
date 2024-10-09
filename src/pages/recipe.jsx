@@ -12,10 +12,15 @@ export default function RecipePage() {
 
     const loadRecipeInfo = async() => {
 
-        const getInfo = await spoonacularApi.getRecipeTitle(recipeId)
+        const getInfo = await spoonacularApi.getRecipeInfo(recipeId)
+
+        const getAnalyzedInstructions = getInfo.analyzedInstructions[0].steps[0]
 
         console.log('getInfo', getInfo)
-    
+        console.log('getInfo.extendedIngredients[0].original', getInfo.extendedIngredients[0].original)
+        console.log('getInfo.analyzedInstructions', getInfo.analyzedInstructions)
+        console.log('getAnalyzedInstructions.number+step', getAnalyzedInstructions.number + " " + getAnalyzedInstructions.step)
+
         setInfo(getInfo)
         
     }

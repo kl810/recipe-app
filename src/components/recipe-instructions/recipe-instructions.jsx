@@ -27,6 +27,7 @@ function RecipeInstructions({info}) {
                             </Row>
                             <Row className="ingredients">
                                 <h2>INGREDIENTS</h2>
+                                {/* <p>{info && info.extendedIngredients[0].original}</p> */}
                                 <p>100ml of milk</p>
                                 <p>50g of butter</p>
                                 <p>3 eggs</p>

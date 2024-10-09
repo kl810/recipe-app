@@ -2,7 +2,7 @@ import './input.css'
 import { useRef} from 'react';
 import {Button, Form, InputGroup} from 'react-bootstrap';
 
-function InputItem({ingredientsList, setIngredientsList}) {
+function InputItem({ingredientsList, setIngredientsList, randomRecipe}) {
 
     const inputIngredient = useRef(null)
 
@@ -42,7 +42,6 @@ function InputItem({ingredientsList, setIngredientsList}) {
                     <i className="fa-solid fa-magnifying-glass"></i>
                 </Button>
             </InputGroup>
-
 
         </>
     )

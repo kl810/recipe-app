@@ -1,5 +1,6 @@
 import ingredientRecipes from './SEARCH-INGREDIENT.json';
-import recipeInstructions from './RECIPE-INSTRUCTIONS.json';
+import recipeInfo from './RECIPE-INFO.json';
+import randomRecipes from './RANDOM-RECIPES.json';
 
 export function getIngredientRecipes() {
     console.log('I am mock')
@@ -8,10 +9,17 @@ export function getIngredientRecipes() {
     })
 }
 
-export function getRecipeInstructions() {
+export function getRecipeInfo() {
     console.log('I am mock')
     return new Promise((resolve, reject) => {
-        resolve(recipeInstructions)
+        resolve(recipeInfo)
+    })
+}
+
+export function getRandomRecipes() {
+    console.log('I am mock')
+    return new Promise((resolve, reject) => {
+        resolve(randomRecipes.recipes)
     })
 }
 
