@@ -66,8 +66,30 @@
     font-family:"Cormorant";
     margin-left: 20px;
     margin-top: 80px;
+    white-space: pre-wrap;
 
 }
+
+.list-style {
+    list-style-type: none;
+}
+
+.steps {
+    margin-top: 20px;
+    display: flex;
+}
+
+.step-num {
+    font-weight: 500;
+    font-size: 22px;
+    display: inline-block; /*Text from step will start new line under the text instead of under the number*/
+    
+}
+
+.step {
+    margin-left: 20px; /*space between num and step*/
+}
+
 
 .ingredients h2, .directions h2 {
     font-weight: 700;
@@ -75,9 +97,13 @@
     margin-bottom: 50px;
 }
 
-.ingredients p, .directions p {
+.ingredients ul, .directions ul {
     font-weight: 400;
     font-size: 20px;
+}
+
+.ingredients ul li {
+   margin-top: 10px;
 }
 
 .notes {  

@@ -1,6 +1,5 @@
 import './recipe-card.css';
 import { Card, Button } from 'react-bootstrap';
-import routes from '../../routes';
 import { Link } from 'react-router-dom';
 
 

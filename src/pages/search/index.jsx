@@ -2,7 +2,7 @@ import './search.css'
 import { useState, useEffect } from "react";
 import InputItem from "../../components/input/input";
 import Tag from "../../components/tag/tag";
-import RandomRecipes from '../../components/random-recipes/random-recipes';
+// import RandomRecipes from '../../components/random-recipes/random-recipes';
 import RecipeCard from "../../components/recipe-card/recipe-card";
 import spoonacularApi from "../../api/spoonacular-api";
 

@@ -5,7 +5,6 @@ import {useParams } from 'react-router-dom';
 
 
 export default function RecipePage() {
-
     const { recipeId } = useParams();
     const [info, setInfo] = useState({});
 
@@ -14,12 +13,12 @@ export default function RecipePage() {
 
         const getInfo = await spoonacularApi.getRecipeInfo(recipeId)
 
-        const getAnalyzedInstructions = getInfo.analyzedInstructions[0].steps[0]
+        // const getAnalyzedInstructions = getInfo.analyzedInstructions[0].steps[0]
 
-        console.log('getInfo', getInfo)
-        console.log('getInfo.extendedIngredients[0].original', getInfo.extendedIngredients[0].original)
-        console.log('getInfo.analyzedInstructions', getInfo.analyzedInstructions)
-        console.log('getAnalyzedInstructions.number+step', getAnalyzedInstructions.number + " " + getAnalyzedInstructions.step)
+        // console.log('getInfo', getInfo)
+        // console.log('getInfo.extendedIngredients[0].original', getInfo.extendedIngredients[0].original)
+        // console.log('getInfo.analyzedInstructions', getInfo.analyzedInstructions)
+        // console.log('getAnalyzedInstructions.number+step', getAnalyzedInstructions.number, " ", getAnalyzedInstructions.step)
 
         setInfo(getInfo)
         
@@ -35,11 +34,11 @@ export default function RecipePage() {
     // console.log("ingredients", info && info.extendedIngredients)
     // // console.log("original", info.extendedIngredients.original)
 
-    // const recipeIngredients = info.extendedIngredients.map((ingredient) => ingredient.original)
+    // const recipeIngredients = info && info.extendedIngredients.map((ingredient) => ingredient.original)
 
     // console.log('recipeingredient', recipeIngredients)
 
     return  (
-        <RecipeInstructions info={info}/>
+        Object.keys(info).length && <RecipeInstructions info={info}/> //check if object is empty
     )
 }
