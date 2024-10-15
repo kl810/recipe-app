@@ -1,3 +1,5 @@
-Ingredient list - map list
-input ingredient with formatting - comma between item
-put ingredient in weblink search
+To do:
+-media query
+-responsiveness on different devices
+-css design
+-recipe instructions - banner image overflow and less stretch

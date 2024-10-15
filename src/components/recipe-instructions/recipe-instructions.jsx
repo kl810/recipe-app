@@ -18,7 +18,7 @@ function RecipeInstructions({info}) {
     console.log(recipeInstructions)
 
     return(
-        <>
+        <div className="recipe-instructions">
             <div className="d-flex justify-content-center align-items-center"> 
                 <img className="banner-img" src={info.image} alt="recipe"/>
             </div>
@@ -61,7 +61,7 @@ function RecipeInstructions({info}) {
                 </Container>                
             </div>
             
-        </>
+        </div>
         
     )
 }

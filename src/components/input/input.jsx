@@ -2,7 +2,7 @@ import './input.css'
 import { useRef} from 'react';
 import {Button, Form, InputGroup} from 'react-bootstrap';
 
-function InputItem({ingredientsList, setIngredientsList, randomRecipe}) {
+function InputItem({ingredientsList, setIngredientsList}) {
 
     const inputIngredient = useRef(null)
 
@@ -18,14 +18,12 @@ function InputItem({ingredientsList, setIngredientsList, randomRecipe}) {
     
     return(
         <> 
-            {/* React bootstrap */}
             <InputGroup id="input-group">
                 <Form.Control
                     ref={inputIngredient}
                     name="input-ingredient"
                     placeholder="What's in your pantry?"
                     aria-label="input-ingredient"
-                    aria-describedby="basic-addon2"
                     type="text"
                     onKeyDown={(e) => { 
                         if (e.key === "Enter") { 
@@ -34,8 +32,7 @@ function InputItem({ingredientsList, setIngredientsList, randomRecipe}) {
                     }}  
                 />
                 <Button 
-                    variant="outline-secondary" 
-                    id="button-addon2" 
+                    className="search-btn"
                     type="submit"
                     onClick={onSubmit}
                 >

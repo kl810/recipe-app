@@ -1,5 +1,9 @@
+.recipe-instructions {
+    background-color: #afc8adab;
+    border-radius: 50px;
+}
+
 .banner-img {
-    /* background-color:cadetblue; */
     position: relative;
     top: 0;
     left: 0;
@@ -48,7 +52,6 @@
 }
 
 .prep {
-    font-family:"Cormorant";
     font-weight: 400;
     font-style: italic;
     font-size: 20px;
@@ -63,7 +66,6 @@
 }
 
 .ingredients {
-    font-family:"Cormorant";
     margin-left: 20px;
     margin-top: 80px;
     white-space: pre-wrap;
@@ -107,7 +109,6 @@
 }
 
 .notes {  
-    font-family:"Cormorant";
     font-weight: 400;
     font-size: 20px;
     font-style: italics; 
@@ -118,7 +119,6 @@
 }
 
 .directions {
-    font-family:"Cormorant";
     margin-top: 50px;
     padding: 80px;
 }

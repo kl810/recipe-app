@@ -1,7 +1,8 @@
 .App {
   box-sizing: border-box;
-  margin: 100px;
+  margin: 20px 100px;
   padding: 20px;
+  font-family: "LXGW WenKai Mono TC", monospace;
   /* border: solid black; */
 
 }

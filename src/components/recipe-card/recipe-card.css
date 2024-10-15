@@ -8,6 +8,11 @@
     display: inline-flex;
     background: #EEE7DA;
     cursor: pointer;
+    overflow: hidden; /*img corners are hidden so card top border radius can be seen*/
+}
+
+.card-img {
+    opacity: 0.8;
 }
 
 
