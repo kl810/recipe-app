@@ -7,7 +7,7 @@ function TopNav() {
         <div className="topnav">
             <a className="active" href={routes.home}>
                 <span className="material-symbols-outlined">kitchen</span>
-                What's cookin'?
+                Food Waste Warrior
             </a>
 
         </div>

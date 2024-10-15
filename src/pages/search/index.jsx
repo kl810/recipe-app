@@ -13,21 +13,17 @@ export default function SearchPage() {
 
     const [searchResults, setSearchResults] = useState([])
 
-    // const [randomRecipes, setRandomRecipes] = useState([])
-
     //Search results from input
 
     const loadSearchResults = async() => {
-
-            const results = await spoonacularApi.getIngredientRecipes(ingredientsList)
-            setSearchResults(results)
-        }
+        const results = await spoonacularApi.getIngredientRecipes(ingredientsList)
+        setSearchResults(results)
+    }
 
     //Random recipes as placeholder when no ingredient/s is inputted
 
     const loadRandomRecipes = async() => {
         const results = await spoonacularApi.getRandomRecipes()
-        console.log('loadRandomRecipes', results)
         setSearchResults(results)
     }
 
@@ -49,9 +45,7 @@ export default function SearchPage() {
             <div className="ingredient-tags-container">
                 {ingredientsList.map((ingredient, i) => <Tag key={i} ingredient={ingredient} ingredientsList={ingredientsList} setIngredientsList={setIngredientsList}/>)}
             </div>
-            {/* <div className="random-recipes">
-                {randomRecipes.map((randomRecipe, index) => <RandomRecipes key={index} randomRecipe={randomRecipe} />)}
-            </div> */}
+            <h2>Discover new recipes...</h2>
             <div className="recipe-card-container">
                 {searchResults.map((searchResult, index) => <RecipeCard key={index} recipe={searchResult} />)}
             </div>
