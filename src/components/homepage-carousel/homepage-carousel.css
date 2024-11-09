@@ -1,27 +1,43 @@
-.carousel-container {
-    border-radius: 50px; /*whole component*/
+.homepage-container {
+    /* border-radius: 20px; whole component */
     overflow: hidden;
+    background-image: url("../../images/background-image-1.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    padding: 20px;
 }
 
-.background {
+.home-text {
+    position: absolute;
+}
+
+/* .background {
     display: block;
-    width: 60rem; /* add auto resizing */
-    height: 45rem;
+    width: 100%; /* add auto resizing */
+    /* height: 100%;
     opacity: 0.5;
     object-fit: cover;
-    border-radius: 50px; /*all four corners of image*/
-}
+    border-radius: 50px; all four corners of image
+} */ 
 
 .home-title {
-    font-size: 3rem;
+    font-size: 50px;
     font-weight: 700;
-    color: #383838;
+    /* color: #383838; */
+    color: white;
 }
 
 .home-sub {
-    font-size: 1.5rem;
+    font-size: 25px;
     font-weight: 600;
-    color: 	#404040;
+    /* color: 	#404040; */
+    color: white;
 }
 
 .text-link {
@@ -31,6 +47,7 @@
 }
 
 .btn-wrapper {
+    position: absolute;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -48,3 +65,4 @@
     padding: 5px;
     color: 	#efeeee;
 }
+

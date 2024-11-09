@@ -10,29 +10,16 @@ import routes from '../../routes';
 function HomepageCarousel() {
 
     return (
-        <div className="carousel-container">
-            <Carousel>
-                <Carousel.Item interval={1500}>   
-                    <img className="d-block w-100 background" src={imageOne} alt="fresh produce"/>
-                    <Carousel.Caption>
-                        <h3 className="home-title">Save Money and Reduce Food Waste</h3>
-                        <p className="home-sub">Be a Food Waste Warrior and turn your pantry ingredients into a delicious meal! </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>   
-                    <img className="d-block w-100 background" src={imageTwo} alt="compost"/>
-                    <Carousel.Caption>
-                        <h3 className="home-title">Don't know what to cook?</h3>
-                        <p className="home-sub">Find 100s of recipes, filtered by products you have at home.</p>
-                        
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-            <div className="btn-wrapper">
-                <button className="btn-search">
-                    <Link to={routes.search} className="text-link">Let's get cookin'!</Link>
-                    <span className="home-icon"><i className="fa-solid fa-kitchen-set"></i></span>
-                </button>
+        <div className="homepage-container">
+            <div className-="home-text">
+                <h3 className="home-title">Save Money and Reduce Food Waste</h3>
+                <p className="home-sub">Be a Food Waste Warrior and turn your pantry ingredients into a delicious meal! </p>
+                <div className="btn-wrapper">
+                    <button className="btn-search">
+                        <Link to={routes.search} className="text-link">Let's get cookin'!</Link>
+                        <span className="home-icon"><i className="fa-solid fa-kitchen-set"></i></span>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -40,3 +27,21 @@ function HomepageCarousel() {
 }
 
 export default HomepageCarousel;
+
+    {/* <Carousel>
+        <Carousel.Item interval={1500}>   
+            <img className="d-block w-100 background" src={imageOne} alt="fresh produce"/>
+            <Carousel.Caption>
+                <h3 id="home-title">Save Money and Reduce Food Waste</h3>
+                <p className="home-sub">Be a Food Waste Warrior and turn your pantry ingredients into a delicious meal! </p>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={1500}>   
+            <img className="d-block w-100 background" src={imageTwo} alt="compost"/>
+            <Carousel.Caption>
+                <h3 id="home-title">Don't know what to cook?</h3>
+                <p className="home-sub">Find 100s of recipes, filtered by products you have at home.</p>
+                
+            </Carousel.Caption>
+        </Carousel.Item>
+    </Carousel> */}
