@@ -9,11 +9,11 @@ function RandomRecipes({randomRecipe}){
                     <p className="recipe-title">
                         {randomRecipe && randomRecipe.title}
                     </p>
-                    <img className="random-recipe-img" src={randomRecipe && randomRecipe.image} alt="random recipe"/>
+                    <img className="random-recipe-img" src={randomRecipe && randomRecipe.image} alt="recipe"/>
                 </div>
             </div>
         </>
-    )
+    ) 
 
 }
 

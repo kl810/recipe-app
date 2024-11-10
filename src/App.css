@@ -3,8 +3,7 @@
   /* margin: 20px 100px;
   padding: 20px; */
   font-family: "Sriracha", cursive;
-  /* width: 480px; */
-
+  min-width: 480px;
 }
 
 
