@@ -6,7 +6,7 @@
     min-width: 100px;
     margin: 20px auto;
     justify-content: center;
-    background-color:#EEE7DA;
+    background-color:#F0F0F0;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     color: rgba(79, 80, 90, .6);
     border-radius: 22px !important; /*override input group bootstrap css*/

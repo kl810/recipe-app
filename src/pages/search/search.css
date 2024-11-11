@@ -1,42 +1,31 @@
 .search-page {
-    width: 100vw;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F0F0F0;
 }
 
 .search-header {
-    background-color: #AFC8AD;
-    /* border-radius: 50px; */
+    /* background-color: #00AB66; */
+    background-color: #afc8adab;
     padding: 10px 30px;
     height: 20vh;
+    width: 95vw;
+    margin: 0 auto;
+    border-radius: 50px;
 }
 
 .discover-heading {
     font-size: 2em;
-    padding: 50px 30px;
+    padding: 50px 50px;
 }
 
 .recipe-card-container {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );   
     grid-row-gap: 30px;
-    grid-column-gap: 30px;
+    grid-column-gap: 10px;
     justify-items: center;
-    padding: 10px 30px;
+    padding: 10px 20px;
 }
-
-/* @media screen and (min-width: 481px) {
-    .recipe-card-container {
-        grid-template-columns: repeat(2, 300px); 
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .recipe-card-container {
-        grid-template-columns: repeat(3, 300px); 
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .recipe-card-container {
-        grid-template-columns: repeat(4, 300px); 
-    }
-} */
+ 

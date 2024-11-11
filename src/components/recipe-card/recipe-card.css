@@ -1,12 +1,12 @@
 .custom-card {
     width: 70vw;
-    height: fit-content;
     /* border-radius: 20px; */
     /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
     position: relative;
     display: inline-flex;
-    background: #EEE7DA;
+    /* background: #EEE7DA; */
+    background: white;
     cursor: pointer;
     overflow: hidden; /*img corners are hidden so card top border radius can be seen*/
 }
@@ -15,11 +15,16 @@
     opacity: 0.6;
 }
 
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 684px) {
     .custom-card{
         width: 18rem;
+        height: 21rem;
     }
 }
 
-
-
+@media screen and (min-width: 1010px) {
+    .custom-card{
+        width: 15rem;
+        height: 18rem;
+    }
+}

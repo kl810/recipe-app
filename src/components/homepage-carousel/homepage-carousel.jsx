@@ -17,7 +17,7 @@ function HomepageCarousel() {
                 <div className="btn-wrapper">
                     <button className="btn-search">
                         <Link to={routes.search} className="text-link">Let's get cookin'!</Link>
-                        <span className="home-icon"><i className="fa-solid fa-kitchen-set"></i></span>
+                        {/* <span className="home-icon"><i className="fa-solid fa-kitchen-set"></i></span> */}
                     </button>
                 </div>
             </div>

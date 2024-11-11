@@ -11,7 +11,7 @@
     /* border-radius: 20px; */
     position: relative; /*in relation to position absolute for recipe-title*/
     text-align: center;
-    height: fit-content;
+    /* height: fit-content; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     cursor: pointer;
     overflow: hidden; 

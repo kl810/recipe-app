@@ -25,7 +25,7 @@ function RecipeInstructions({info}) {
             <div className="recipe-text">
                 <Container fluid>
                     <Row>
-                        <Col className="col-4 info">
+                        <Col className="col-md-4 info">
                             <h1 className="title">{info.title}</h1>
                             <hr className="line"></hr>
                             <Row>
@@ -44,13 +44,8 @@ function RecipeInstructions({info}) {
                                     {recipeIngredients}
                                 </ul>
                             </Row> 
-                            <Row className="d-flex justify-content-center align-items-center notes">
-                                    <p>NOTES: <br />
-                                        Allergens: peanuts, dairy, eggs
-                                    </p>
-                            </Row>
                         </Col>
-                        <Col className="Col-8 directions">
+                        <Col className="col-md-8 directions">
                             <h2>DIRECTIONS</h2>
                             <ul className="list-style">
                                 {recipeInstructions}
