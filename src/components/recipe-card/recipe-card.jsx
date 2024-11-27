@@ -14,7 +14,7 @@ function RecipeCard({recipe}) {
 
     return(
         <Card onClick={handleClickRecipe} className="custom-card">
-            <Card.Img variant="top" src={recipe.image} className="card-img"/>
+            <Card.Img variant="top" src={recipe.image || "src/images/landscape-placeholder-svgrepo-com.png"} className="card-img"/>
             <Card.Body className="card-body">
                 <Card.Title>{recipe.title}</Card.Title>
             </Card.Body>
@@ -24,18 +24,3 @@ function RecipeCard({recipe}) {
 }
 
 export default RecipeCard;
-
-
-//number of likes
-// const [like, setLike] = useState(false)
-
-// function handleClickLike(event) {
-//     setLike(!like);
-// }
-
-//replaced Button component with making the entire Card component an onClick function
-
-    {/* <Card.Text><button class="material-symbols-outlined">favorite</button>{recipe.likes}</Card.Text> */}
-    {/* <Button variant="primary" className="button">
-        <Link to={`/recipes/${recipe.id}`} className="text-link">Click for Recipe</Link>
-    </Button> */}

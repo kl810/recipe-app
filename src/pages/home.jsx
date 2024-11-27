@@ -1,13 +1,11 @@
-// import { Link } from 'react-router-dom';
-// import routes from '../routes';
-import HomepageCarousel from '../components/homepage-carousel/homepage-carousel';
+import Homepage from '../components/homepage/homepage';
 
 
 export default function HomePage() {
 
     return  (
         <>
-            <HomepageCarousel />
+            <Homepage />
         </>
     )
 }

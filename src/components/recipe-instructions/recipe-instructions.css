@@ -3,7 +3,8 @@
     /* background-color: #F0F0F0; */
     border-radius: 20px;
     width: 95vw;
-    margin: 0 20px;
+    margin: 0px 20px;
+    padding-bottom: 5rem;
     overflow: hidden;
 }
 
@@ -26,7 +27,7 @@
 
 .title {
     font-family: "Caveat";
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -54,7 +55,7 @@
 .prep {
     font-weight: 400;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: black;
     padding: 10px;
     margin-top: 10px;
@@ -65,24 +66,27 @@
     position: relative;
 }
 
-.ingredients {
+.ingredients, .directions {
     margin-left: 2rem;
     margin-top: 2rem;
+    padding-right: 5rem;
     white-space: pre-wrap;
 }
 
 .list-style {
     list-style-type: none;
+    padding-left: 1rem;
 }
 
-.directions {
+/* .directions {
     margin-left: 2rem;
     margin-top: 2rem;
     white-space: pre-wrap;
-}
+} */
 
 .steps {
     display: flex;
+    margin-top: 10px; /*create line break between each step*/
 }
 
 .step-num {
@@ -99,19 +103,18 @@
 
 .ingredients h2, .directions h2 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.5rem;
     margin-bottom: 50px;
 }
 
 .ingredients ul, .directions ul {
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 200;
+    font-size: 1.3rem;
 }
 
 .ingredients ul li {
    margin-top: 10px;
 }
-
 
 
 @media screen and (min-width: 480px){
@@ -121,11 +124,22 @@
     .banner-img {
         height: 30vh;
     }
+
 }
 
-@media screen and (max-width: 768px){
-    .recipe-text{
-        grid-template-columns: 100%;
+@media screen and (min-width: 992px){
+    .title{
+        font-size: 3rem;
     }
-    
+    .ingredients h2, .directions h2{
+        font-size: 1.7rem;
+    }
+    .ingredients ul, .directions ul{
+        font-size: 1.4rem;
+    }
+    .directions{
+        margin-left: 4rem;
+        margin-top: 5rem;
+    }
 }
+

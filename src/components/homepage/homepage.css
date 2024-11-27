@@ -18,26 +18,15 @@
     position: absolute;
 }
 
-/* .background {
-    display: block;
-    width: 100%; /* add auto resizing */
-    /* height: 100%;
-    opacity: 0.5;
-    object-fit: cover;
-    border-radius: 50px; all four corners of image
-} */ 
-
 .home-title {
     font-size: 50px;
     font-weight: 700;
-    /* color: #383838; */
     color: white;
 }
 
 .home-sub {
     font-size: 25px;
     font-weight: 600;
-    /* color: 	#404040; */
     color: white;
 }
 
@@ -74,3 +63,12 @@
     color: 	#efeeee;
 }
 
+@media screen and (min-width: 684px) {
+    .home-title {
+        font-size: 60px;
+    }
+
+    .home-sub {
+        font-size: 30px;
+    }
+}

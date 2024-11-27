@@ -4,13 +4,20 @@ import { Container, Row, Col } from 'react-bootstrap';
 function RecipeInstructions({info}) {
     // console.log("recipeinstructions - info", " ", info)
 
-    const recipeIngredients = info.extendedIngredients.map((ingredient, i) => (<li key={i} className="list">{ingredient.original}</li>));
+    const recipeIngredients = info.extendedIngredients.map(
+        (ingredient, i) => (
+            <li key={i} className="list">
+                {ingredient.original}
+            </li>
+        )
+    );
 
     const recipeInstructions = info.analyzedInstructions[0].steps.map(
         (steps, i) => (
             <li key={i} className="steps">
-                <span className="step-num">{steps.number}</span>
+                <span className="step-num">{steps.number}.</span>
                 <span className="step">{steps.step}</span>
+                <br></br>
             </li>
         )
     )
@@ -25,7 +32,7 @@ function RecipeInstructions({info}) {
             <div className="recipe-text">
                 <Container fluid>
                     <Row>
-                        <Col className="col-md-4 info">
+                        <Col className="col-sm-12 col-lg-4 info">
                             <h1 className="title">{info.title}</h1>
                             <hr className="line"></hr>
                             <Row>
@@ -45,12 +52,11 @@ function RecipeInstructions({info}) {
                                 </ul>
                             </Row> 
                         </Col>
-                        <Col className="col-md-8 directions">
+                        <Col className="col-sm-12 col-lg-7 directions">
                             <h2>DIRECTIONS</h2>
                             <ul className="list-style">
                                 {recipeInstructions}
                             </ul>
-
                         </Col>
                     </Row>
                 </Container>                

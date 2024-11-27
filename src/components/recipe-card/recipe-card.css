@@ -1,11 +1,7 @@
 .custom-card {
     width: 70vw;
-    /* border-radius: 20px; */
-    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
     position: relative;
     display: inline-flex;
-    /* background: #EEE7DA; */
     background: white;
     cursor: pointer;
     overflow: hidden; /*img corners are hidden so card top border radius can be seen*/

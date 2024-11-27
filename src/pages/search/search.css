@@ -1,18 +1,29 @@
 .search-page {
-    width: 100%;
+    /* width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #F0F0F0;
+    background-color: #F0F0F0; */
+    background-color: #afc8adab;
+    border-radius: 20px;
+    width: 95vw;
+    margin: 0 20px;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.search-header {
+/* .search-header { */
     /* background-color: #00AB66; */
-    background-color: #afc8adab;
+    /* background-color: #afc8adab;
     padding: 10px 30px;
     height: 20vh;
     width: 95vw;
     margin: 0 auto;
     border-radius: 50px;
+} */
+
+.ingredient-tags-container {
+    padding: 10px 50px;
 }
 
 .discover-heading {
@@ -29,3 +40,5 @@
     padding: 10px 20px;
 }
  
+@media screen and (min-width: 684px) {
+}
