@@ -2,25 +2,27 @@
     width: 70vw;
     position: relative;
     display: inline-flex;
-    background: white;
+    background: transparent;
+    border: none;
     cursor: pointer;
     overflow: hidden; /*img corners are hidden so card top border radius can be seen*/
 }
 
-.card-img:hover {
+.custom-card:hover {
+    text-decoration: underline;
     opacity: 0.6;
 }
 
 @media screen and (min-width: 684px) {
     .custom-card{
-        width: 18rem;
+        width: 80%;
         height: 21rem;
     }
 }
 
-@media screen and (min-width: 1010px) {
+/* @media screen and (min-width: 1010px) {
     .custom-card{
-        width: 15rem;
-        height: 18rem;
+        width: 18rem;
+        height: 21rem;
     }
-}
+} */
