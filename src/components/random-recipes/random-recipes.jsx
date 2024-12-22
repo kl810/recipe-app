@@ -1,4 +1,6 @@
 import './random-recipes.css';
+import fallbackImage from '../../images/landscape-placeholder-svgrepo-com.png'
+
 
 function RandomRecipes({randomRecipe}){
 
@@ -9,7 +11,7 @@ function RandomRecipes({randomRecipe}){
                     <p className="recipe-title">
                         {randomRecipe && randomRecipe.title}
                     </p>
-                    <img className="random-recipe-img" src={randomRecipe && randomRecipe.image} alt="recipe"/>
+                    <img className="random-recipe-img" src={randomRecipe.image ? randomRecipe.image : fallbackImage} alt="recipe"/>
                 </div>
             </div>
         </>

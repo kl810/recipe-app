@@ -26,15 +26,15 @@ function RecipeInstructions({info}) {
 
     return(
         <div className="recipe-instructions">
-            <div className="d-flex justify-content-center align-items-center"> 
-                <img className="banner-img" src={info.image} alt="recipe"/>
-            </div>
+
             <div className="recipe-text">
                 <Container fluid>
                     <Row>
-                        <Col className="col-sm-12 col-lg-4 info">
-                            <h1 className="title">{info.title}</h1>
-                            <hr className="line"></hr>
+                        <Col className="col-12 col-lg-4 info-left">
+                            <Row>
+                                <h1 className="title">{info.title}</h1>
+                                <hr className="line"></hr>
+                            </Row>
                             <Row>
                                 <Col className="info-col">
                                     <span><i className="fa-solid fa-utensils info-icon"></i></span> 
@@ -45,14 +45,26 @@ function RecipeInstructions({info}) {
                                     <p className="prep">{info.readyInMinutes} minutes</p>
                                 </Col>
                             </Row>
-                            <Row className="ingredients">
-                                <h2>INGREDIENTS</h2>
-                                <ul className="list-style">
-                                    {recipeIngredients}
-                                </ul>
-                            </Row> 
                         </Col>
-                        <Col className="col-sm-12 col-lg-7 directions">
+                        <Col className='col-12 col-lg-7 info-right'>
+                            <div 
+                                className="banner-img" 
+                                style={{
+                                    backgroundImage: `url(${info.image})`
+                                }} 
+                                alt="recipe">
+                            </div>
+                        </Col>
+                        
+                    </Row>
+                    <Row>
+                        <Col className="col-12 col-lg-4 info-left">
+                            <h2>INGREDIENTS</h2>
+                            <ul className="list-style">
+                                {recipeIngredients}
+                            </ul>
+                        </Col>
+                        <Col className="col-12 col-lg-7 info-right">
                             <h2>DIRECTIONS</h2>
                             <ul className="list-style">
                                 {recipeInstructions}
