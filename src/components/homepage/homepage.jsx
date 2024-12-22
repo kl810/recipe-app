@@ -4,10 +4,9 @@ import routes from '../../routes';
 
 
 function Homepage() {
-
     return (
         <div className="homepage-container">
-            <div className-="home-text">
+            <div className="home-text">
                 <h3 className="home-title">Save Money and Reduce Food Waste</h3>
                 <p className="home-sub">Be a Food Waste Warrior and turn your pantry ingredients into a delicious meal! </p>
                 <div className="btn-wrapper">

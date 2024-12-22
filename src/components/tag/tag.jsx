@@ -1,18 +1,15 @@
-import './tag.css'
+import './tag.css';
+import { useContext } from 'react';
+import {AppContext} from '../../App';
 
-function Tag({ingredient, ingredientsList, setIngredientsList}) {
+function Tag({ingredient}) {
+    const {deleteIngredient} = useContext(AppContext);
 
     const handleDelete = (event) => {
         event.preventDefault();
 
-        //Create shallow copy
-        const listCopy = [...ingredientsList]
+        deleteIngredient(ingredient);
 
-        //use filter to remove tag from list
-        const filteredList = listCopy.filter((tag) => tag !== ingredient)
-
-        //set new list
-        setIngredientsList(filteredList)
     }
     
     return (

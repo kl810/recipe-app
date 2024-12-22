@@ -1,17 +1,18 @@
 import './input.css'
-import { useRef} from 'react';
+import { useRef, useContext} from 'react';
 import {Button, Form, InputGroup} from 'react-bootstrap';
+import {AppContext} from '../../App'
 
-function InputItem({ingredientsList, setIngredientsList}) {
+function InputItem() {
+    const {addIngredient} = useContext(AppContext);
 
     const inputIngredient = useRef(null)
 
     const onSubmit = (e) => {
         // e.preventDefault()
         
-        const submitIngredients = [...ingredientsList, inputIngredient.current.value]
+        addIngredient(inputIngredient.current.value) 
         
-        setIngredientsList(submitIngredients)
         inputIngredient.current.value=""
     }
 
