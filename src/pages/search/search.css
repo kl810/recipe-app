@@ -1,8 +1,6 @@
 .search-page {
-    /* background-color: #afc8adab; */
     border-radius: 20px;
-    width: 95vw;
-    min-width: 480px;
+    width: 100vw;
     margin: 10px;
     padding: 30px 20px;
     overflow: hidden;
